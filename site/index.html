@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zachary Sexton — Multiphysics Applications</title>
+<meta name="description" content="Personal portfolio for Zachary Sexton — multiphysics applications, computational science, and biomedical simulation. Drafted in an early-vector-CAD style.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-sheet="01" data-layer="HOME">
+
+<main>
+  <section class="sheet" id="sheet-01">
+    <div class="sheet__corners"><i></i></div>
+    <div class="sheet__num">SHEET 01 / 07</div>
+    <div class="sheet__name">TITLE / ELEVATION</div>
+
+    <div class="sheet__body">
+      <div class="hero">
+        <div class="hero__text">
+          <div class="eyebrow">COMPUTATIONAL SCIENCE — COUPLED PHYSICAL SYSTEMS</div>
+          <h1>ZACHARY<br>SEXTON<span class="slash">.</span></h1>
+          <div class="role">// MULTIPHYSICS APPLICATIONS — BIOMEDICAL SIM.</div>
+          <p class="lede">
+            <strong>Drafting computational models</strong> that couple flow, heat,
+            structure, and transport — for biomedical systems that demand
+            traceable assumptions and reproducible results.
+          </p>
+
+          <div class="dim-table">
+            <div><div class="k">FOCUS</div><div class="v">MULTIPHYSICS</div></div>
+            <div><div class="k">DOMAIN</div><div class="v">BIOMEDICAL</div></div>
+            <div><div class="k">METHOD</div><div class="v">SIMULATION</div></div>
+          </div>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="work.html">VIEW WORK</a>
+            <a class="btn" href="projects.html">ACTIVE PROJECTS</a>
+          </div>
+        </div>
+
+        <!-- ISO drawing: animated tensor field on a deforming saddle manifold -->
+        <div class="iso" aria-label="Animated isometric view of a deforming saddle manifold with a tensor field rendered as principal-direction glyphs">
+          <div class="iso__viewlabel">ISO VIEW — MANIFOLD M ⊂ ℝ³</div>
+          <svg id="iso-svg" viewBox="0 0 600 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="1" cy="1" r="0.6" fill="var(--grid)"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="0" width="600" height="520" fill="url(#dots)"/>
+
+            <g id="iso-axes"></g>
+            <g id="iso-tangent"></g>
+            <g id="iso-mesh"></g>
+            <g id="iso-accents"></g>
+            <g id="iso-glyphs"></g>
+            <g id="iso-origin"></g>
+            <g id="iso-annot"></g>
+          </svg>
+          <div class="iso__scale"><span class="bar"></span>SCALE 1:1 — UNIT = 1.00</div>
+        </div>
+      </div>
+
+      <div class="titleblock">
+        <div><div class="k">DRAWN BY</div><div class="v cyan">Z. SEXTON</div></div>
+        <div><div class="k">PROJECT</div><div class="v">PORTFOLIO</div></div>
+        <div><div class="k">SCALE</div><div class="v">1 : 1</div></div>
+        <div><div class="k">DATE</div><div class="v">2026.05.16</div></div>
+        <div><div class="k">SHEET</div><div class="v">01 / 07</div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="chrome.js"></script>
+<script src="manifold.js"></script>
+</body>
+</html>
