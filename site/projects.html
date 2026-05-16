@@ -27,8 +27,56 @@
             <span class="status">ACTIVE</span>
             <span>— IN PROGRESS</span>
           </div>
-          <h3>Coupled Models for Biomedical Systems</h3>
-          <p>Exploring simulation approaches that combine transport, mechanics, and thermal effects in healthcare-relevant environments.</p>
+          <h3>Coupled Large-Scale Metabolic Models for Biomanufactured Organs</h3>
+          <p>Creating tailored mechanistic metabolism models for induced pluripotent stem cell cultures to improve predictive manufacturing costs and outcomes.</p>
+          <div class="metabolic-drawing" aria-label="CAD-style diagram of a coupled metabolic model for stem cell culture">
+            <svg viewBox="0 0 260 150" role="img">
+              <title>CAD-style diagram of coupled metabolic model for stem cell culture</title>
+              <defs>
+                <pattern id="metabolic-grid" width="12" height="12" patternUnits="userSpaceOnUse">
+                  <path d="M 12 0 L 0 0 0 12" class="diagram-grid-line"/>
+                </pattern>
+                <marker id="metabolic-arrow" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto">
+                  <path d="M 0 0 L 6 3 L 0 6 Z" class="diagram-arrow-fill"/>
+                </marker>
+              </defs>
+
+              <rect width="260" height="150" fill="url(#metabolic-grid)"/>
+              <path d="M42 38 H110 L119 118 H33 Z" class="diagram-vessel"/>
+              <path d="M50 58 H102 L108 108 H44 Z" class="diagram-media"/>
+              <path d="M58 70 C65 64 76 64 83 70 C91 77 102 76 106 69" class="diagram-flow"/>
+              <path d="M58 92 C67 87 78 88 86 94 C94 101 103 99 108 91" class="diagram-flow"/>
+              <circle cx="56" cy="79" r="3" class="diagram-cell"/>
+              <circle cx="76" cy="84" r="3.5" class="diagram-cell"/>
+              <circle cx="94" cy="76" r="3" class="diagram-cell"/>
+              <circle cx="64" cy="101" r="2.8" class="diagram-cell"/>
+              <circle cx="96" cy="98" r="3.2" class="diagram-cell"/>
+
+              <g class="metabolic-network">
+                <circle cx="164" cy="47" r="11" class="metabolic-node node-cyan"/>
+                <circle cx="211" cy="50" r="11" class="metabolic-node node-yellow"/>
+                <circle cx="188" cy="82" r="12" class="metabolic-node node-green"/>
+                <circle cx="149" cy="104" r="10" class="metabolic-node node-magenta"/>
+                <circle cx="222" cy="111" r="10" class="metabolic-node node-red"/>
+                <path d="M111 72 C129 60 140 51 153 48" class="diagram-link" marker-end="url(#metabolic-arrow)"/>
+                <path d="M175 47 L200 50" class="diagram-link" marker-end="url(#metabolic-arrow)"/>
+                <path d="M207 59 L194 72" class="diagram-link" marker-end="url(#metabolic-arrow)"/>
+                <path d="M179 89 L158 99" class="diagram-link" marker-end="url(#metabolic-arrow)"/>
+                <path d="M199 89 L216 104" class="diagram-link" marker-end="url(#metabolic-arrow)"/>
+                <path d="M155 96 C151 78 153 63 159 55" class="diagram-link diagram-dash"/>
+              </g>
+
+              <line x1="35" y1="124" x2="119" y2="124" class="diagram-dim" marker-start="url(#metabolic-arrow)" marker-end="url(#metabolic-arrow)"/>
+              <line x1="35" y1="116" x2="35" y2="131" class="diagram-dim"/>
+              <line x1="119" y1="116" x2="119" y2="131" class="diagram-dim"/>
+              <text x="14" y="20" class="diagram-label diagram-label--cyan">COUPLED MODEL</text>
+              <text x="14" y="32" class="diagram-label">IPSC CULTURE + FLUX MAP</text>
+              <text x="77" y="120" class="diagram-label" text-anchor="middle">BATCH VOL.</text>
+              <text x="153" y="35" class="diagram-label">GLC</text>
+              <text x="203" y="38" class="diagram-label">ATP</text>
+              <text x="181" y="104" class="diagram-label">GROWTH</text>
+            </svg>
+          </div>
           <div class="drawing__meta">
             <span class="id">DWG-A-001</span>
             <span>OPENED 2026.02</span>
@@ -55,8 +103,63 @@
             <span class="status">ACTIVE</span>
             <span>— IN PROGRESS</span>
           </div>
-          <h3>Scientific Visualization</h3>
-          <p>Creating visuals that reveal model behavior without losing the underlying physics.</p>
+          <h3>MultiPhysics Optimized Design of Bioreactor Impeller</h3>
+          <p>Improving large-scale cell culture in batch reactor designs for future biomanufactoring.</p>
+          <div class="impeller-drawing" aria-label="CAD-style isometric view of a four-blade bioreactor impeller">
+            <svg viewBox="0 0 260 150" role="img">
+              <title>CAD-style isometric view of a four-blade bioreactor impeller</title>
+              <defs>
+                <pattern id="impeller-grid" width="12" height="12" patternUnits="userSpaceOnUse">
+                  <path d="M 12 0 L 0 0 0 12" class="impeller-grid-line"/>
+                </pattern>
+                <marker id="impeller-arrow" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5" orient="auto">
+                  <path d="M 0 0 L 6 3 L 0 6 Z" class="impeller-arrow-fill"/>
+                </marker>
+              </defs>
+
+              <rect width="260" height="150" fill="url(#impeller-grid)"/>
+              <ellipse cx="130" cy="76" rx="72" ry="38" class="impeller-construction"/>
+              <ellipse cx="130" cy="76" rx="42" ry="22" class="impeller-construction impeller-dash"/>
+              <line x1="130" y1="26" x2="130" y2="122" class="impeller-axis"/>
+              <line x1="66" y1="48" x2="194" y2="104" class="impeller-axis"/>
+              <line x1="66" y1="104" x2="194" y2="48" class="impeller-axis"/>
+
+              <g class="impeller-rotor">
+                <g class="impeller-blade">
+                  <path d="M140 66 L191 40 L198 56 L144 75 Z"/>
+                  <path d="M143 70 L194 48"/>
+                </g>
+                <g class="impeller-blade">
+                  <path d="M120 66 L69 40 L62 56 L116 75 Z"/>
+                  <path d="M117 70 L66 48"/>
+                </g>
+                <g class="impeller-blade">
+                  <path d="M144 77 L198 96 L191 112 L140 86 Z"/>
+                  <path d="M143 82 L194 104"/>
+                </g>
+                <g class="impeller-blade">
+                  <path d="M116 77 L62 96 L69 112 L120 86 Z"/>
+                  <path d="M117 82 L66 104"/>
+                </g>
+              </g>
+
+              <path d="M113 72 C113 63 147 63 147 72 L147 89 C147 99 113 99 113 89 Z" class="impeller-hub-side"/>
+              <ellipse cx="130" cy="72" rx="17" ry="9" class="impeller-hub"/>
+              <ellipse cx="130" cy="72" rx="5" ry="2.6" class="impeller-bore"/>
+              <ellipse cx="130" cy="63" rx="2" ry="1.1" class="impeller-bolt"/>
+              <ellipse cx="142" cy="72" rx="2" ry="1.1" class="impeller-bolt"/>
+              <ellipse cx="130" cy="81" rx="2" ry="1.1" class="impeller-bolt"/>
+              <ellipse cx="118" cy="72" rx="2" ry="1.1" class="impeller-bolt"/>
+
+              <path d="M58 132 H202" class="impeller-dim" marker-start="url(#impeller-arrow)" marker-end="url(#impeller-arrow)"/>
+              <line x1="58" y1="122" x2="58" y2="139" class="impeller-dim"/>
+              <line x1="202" y1="122" x2="202" y2="139" class="impeller-dim"/>
+              <text x="130" y="128" class="impeller-label" text-anchor="middle">SWEEP DIA.</text>
+              <text x="14" y="20" class="impeller-label impeller-label--cyan">ISO VIEW</text>
+              <text x="14" y="32" class="impeller-label">4-BLADE IMPELLER</text>
+              <text x="188" y="118" class="impeller-label">PITCH 35°</text>
+            </svg>
+          </div>
           <div class="drawing__meta">
             <span class="id">DWG-A-003</span>
             <span>OPENED 2026.04</span>
